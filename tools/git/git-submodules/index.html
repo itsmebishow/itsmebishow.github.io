@@ -894,6 +894,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deleting-submodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Submodule
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2415,6 +2424,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deleting-submodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting Submodule
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2554,7 +2572,54 @@
 <td>Removes a submodule from your project</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<hr>
+<h2 id="deleting-submodule">Deleting Submodule</h2>
+<p>The majority of answers to this question are outdated, incomplete, or unnecessarily complex.</p>
+<p>A submodule cloned using <code>git 1.7.8</code> or newer will leave at most four traces of itself in your local repo. The process for removing those four traces is given by the three commands below:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Remove the submodule entry from .git/config</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>git<span class="w"> </span>submodule<span class="w"> </span>deinit<span class="w"> </span>-f<span class="w"> </span>path/to/submodule
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Remove the submodule directory from the superproject's .git/modules directory</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>rm<span class="w"> </span>-rf<span class="w"> </span>.git/modules/path/to/submodule
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># also remove the .git/config links for submodule</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>git<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>path/to/submodule
+</span></code></pre></div>
+<details class="quote" open="open">
+<summary>Note by Bishow</summary>
+<ol>
+<li>deinit</li>
+<li>remove the submodule from  <code>.git/config</code> file, links of the submodule.</li>
+<li><code>rm -rf .git/modules/&lt;submodule_path&gt;</code>: remove Submodule in the <code>git/modules</code> directory, removes the unnecessay module.</li>
+<li>
+<p><code>git rm &lt;submodule&gt;</code>.</p>
+</li>
+<li>
+<p><code>git rm --cached &lt;submodule_path&gt;</code>: Remove the Submodule from the Git Index</p>
+</li>
+</ol>
+</details>
+<details class="tip" open="open">
+<summary>Summary of Key Commands:</summary>
+<ul>
+<li><strong>Add a submodule</strong>: <code>git submodule add &lt;repository_url&gt; &lt;path&gt;</code></li>
+<li><strong>Initialize submodules</strong>: <code>git submodule init</code></li>
+<li><strong>Update submodules</strong>: <code>git submodule update</code></li>
+<li><strong>Clone with submodules</strong>: <code>git clone --recurse-submodules &lt;repository_url&gt;</code></li>
+<li><strong>Remove submodule</strong>: <code>git submodule deinit &lt;path&gt; &amp;&amp; git rm &lt;path&gt;</code></li>
+</ul>
+</details>
+<ul>
+<li><a href="https://chrisjean.com/git-submodules-adding-using-removing-and-updating/">Git Submodules: Adding, Using, Removing, Updating</a></li>
+<li><a href="https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule/36593218#36593218">stackoverflow: </a></li>
+<li><a href="https://gist.github.com/myusuf3/7f645819ded92bda6677">gist: delete_git_submodule</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-remove-a-submodule/">geeksforgeeks: How to Remove a Submodule?</a></li>
+<li><a href="https://www.atlassian.com/git/articles/core-concept-workflows-and-tips">Submodules: Core concept, workflows and tips </a></li>
+</ul></div>
 
 
 
