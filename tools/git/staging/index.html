@@ -827,6 +827,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#remove-tracked-file-or-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove tracked file or directory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
       Reference
@@ -2434,6 +2443,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#remove-tracked-file-or-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove tracked file or directory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
       Reference
@@ -2513,6 +2531,36 @@
 <li><strong>Multiple changes</strong>: It lets you prepare multiple changes at once, even if they are made to different files, and commit them together in one cohesive commit.</li>
 </ul>
 <p><a class="glightbox" href="https://powershellmagazine.com/images/git312.png" data-type="image" data-width="100%" data-height="auto" data-title="Git for IT Professionals" data-desc-position="bottom"><img alt="Git for IT Professionals" src="https://powershellmagazine.com/images/git312.png"></a></p>
+<hr>
+<h2 id="remove-tracked-file-or-directory">Remove tracked file or directory</h2>
+<p>To remove a tracked file in Git (i.e., a file that has already been added to the repository and committed), you need to follow these steps depending on whether you want to keep the file in your working directory or completely remove it from both Git and your local file system.</p>
+<ol>
+<li>
+<p><strong>Remove a Tracked File from Git but Keep It Locally (Untrack the File)</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>&lt;file&gt;
+</span></code></pre></div>
+<p>If you don't want the file to be tracked again in the future, add it to the <code>.gitignore</code> file.</p>
+</li>
+<li>
+<p><strong>Remove a Tracked File from Git and Locally (Delete the File)</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>rm<span class="w"> </span>&lt;file&gt;
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Remove All Tracked Files (For a Specific Directory)</strong></p>
+<p>If you want to untrack all files in a directory, you can run:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>rm<span class="w"> </span>--cached<span class="w"> </span>-r<span class="w"> </span>&lt;directory&gt;
+</span></code></pre></div>
+</li>
+</ol>
+<details class="tip" open="open">
+<summary>Summary of Git Commands</summary>
+<ul>
+<li><code>git rm --cached &lt;file&gt;</code> – Untrack a file but keep it locally.</li>
+<li><code>git rm &lt;file&gt;</code> – Remove a file from Git and delete it locally.</li>
+<li><code>git commit -m "message"</code> – Commit the changes after removing files.</li>
+</ul>
+</details>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
