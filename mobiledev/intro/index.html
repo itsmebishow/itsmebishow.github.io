@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/logo/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.2">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
       
       
 
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#intro" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -113,13 +118,13 @@
     </div>
     
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -128,21 +133,21 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -338,23 +343,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Blog
-    
   </span>
   
 
@@ -382,7 +388,6 @@
   
   <span class="md-ellipsis">
     Index
-    
   </span>
   
 
@@ -401,12 +406,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
@@ -417,7 +421,6 @@
   
   <span class="md-ellipsis">
     Archive
-    
   </span>
   
 
@@ -445,7 +448,6 @@
   
   <span class="md-ellipsis">
     2024
-    
   </span>
   
 
@@ -479,23 +481,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Tools
-    
   </span>
   
 
@@ -521,7 +524,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -540,12 +542,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
@@ -556,7 +557,6 @@
   
   <span class="md-ellipsis">
     SSH
-    
   </span>
   
 
@@ -582,7 +582,6 @@
   
   <span class="md-ellipsis">
     Overview
-    
   </span>
   
 
@@ -604,7 +603,6 @@
   
   <span class="md-ellipsis">
     ssh-keygen
-    
   </span>
   
 
@@ -631,12 +629,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
@@ -647,7 +644,6 @@
   
   <span class="md-ellipsis">
     Terminal
-    
   </span>
   
 
@@ -670,12 +666,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
@@ -686,7 +681,6 @@
   
   <span class="md-ellipsis">
     Tmux
-    
   </span>
   
 
@@ -712,7 +706,6 @@
   
   <span class="md-ellipsis">
     Overview
-    
   </span>
   
 
@@ -734,7 +727,6 @@
   
   <span class="md-ellipsis">
     status-right
-    
   </span>
   
 
@@ -764,7 +756,6 @@
   
   <span class="md-ellipsis">
     Zsh
-    
   </span>
   
 
@@ -786,7 +777,6 @@
   
   <span class="md-ellipsis">
     Pass Command Line
-    
   </span>
   
 
@@ -813,12 +803,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
@@ -829,7 +818,6 @@
   
   <span class="md-ellipsis">
     Git
-    
   </span>
   
 
@@ -855,7 +843,6 @@
   
   <span class="md-ellipsis">
     Overview
-    
   </span>
   
 
@@ -877,7 +864,6 @@
   
   <span class="md-ellipsis">
     Architecture
-    
   </span>
   
 
@@ -899,7 +885,6 @@
   
   <span class="md-ellipsis">
     Staging
-    
   </span>
   
 
@@ -921,7 +906,6 @@
   
   <span class="md-ellipsis">
     tricks
-    
   </span>
   
 
@@ -943,7 +927,6 @@
   
   <span class="md-ellipsis">
     resource
-    
   </span>
   
 
@@ -962,12 +945,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_6" >
@@ -978,7 +960,6 @@
   
   <span class="md-ellipsis">
     Submodule
-    
   </span>
   
 
@@ -1004,7 +985,6 @@
   
   <span class="md-ellipsis">
     Overview
-    
   </span>
   
 
@@ -1026,7 +1006,6 @@
   
   <span class="md-ellipsis">
     Solved
-    
   </span>
   
 
@@ -1061,12 +1040,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
@@ -1077,7 +1055,6 @@
   
   <span class="md-ellipsis">
     Github
-    
   </span>
   
 
@@ -1103,7 +1080,6 @@
   
   <span class="md-ellipsis">
     Organization
-    
   </span>
   
 
@@ -1130,12 +1106,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
@@ -1146,7 +1121,6 @@
   
   <span class="md-ellipsis">
     Github Actions
-    
   </span>
   
 
@@ -1172,7 +1146,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1194,7 +1167,6 @@
   
   <span class="md-ellipsis">
     Workflow
-    
   </span>
   
 
@@ -1221,12 +1193,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
@@ -1237,7 +1208,6 @@
   
   <span class="md-ellipsis">
     Gitlab
-    
   </span>
   
 
@@ -1263,7 +1233,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1293,7 +1262,6 @@
   
   <span class="md-ellipsis">
     CronJob
-    
   </span>
   
 
@@ -1312,12 +1280,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
@@ -1328,7 +1295,6 @@
   
   <span class="md-ellipsis">
     Precommit
-    
   </span>
   
 
@@ -1354,7 +1320,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1376,7 +1341,6 @@
   
   <span class="md-ellipsis">
     Typescript
-    
   </span>
   
 
@@ -1410,23 +1374,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Career
-    
   </span>
   
 
@@ -1452,7 +1417,6 @@
   
   <span class="md-ellipsis">
     Study Technique
-    
   </span>
   
 
@@ -1474,7 +1438,6 @@
   
   <span class="md-ellipsis">
     Formula
-    
   </span>
   
 
@@ -1493,12 +1456,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
@@ -1509,7 +1471,6 @@
   
   <span class="md-ellipsis">
     Roadmap
-    
   </span>
   
 
@@ -1535,7 +1496,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1557,7 +1517,6 @@
   
   <span class="md-ellipsis">
     Developer
-    
   </span>
   
 
@@ -1579,7 +1538,6 @@
   
   <span class="md-ellipsis">
     Tech Stack
-    
   </span>
   
 
@@ -1606,12 +1564,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
@@ -1622,7 +1579,6 @@
   
   <span class="md-ellipsis">
     Certification
-    
   </span>
   
 
@@ -1648,7 +1604,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1670,7 +1625,6 @@
   
   <span class="md-ellipsis">
     React
-    
   </span>
   
 
@@ -1692,7 +1646,6 @@
   
   <span class="md-ellipsis">
     Python
-    
   </span>
   
 
@@ -1719,12 +1672,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
@@ -1735,7 +1687,6 @@
   
   <span class="md-ellipsis">
     University
-    
   </span>
   
 
@@ -1761,7 +1712,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -1788,12 +1738,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
@@ -1804,7 +1753,6 @@
   
   <span class="md-ellipsis">
     Interview Question
-    
   </span>
   
 
@@ -1830,7 +1778,6 @@
   
   <span class="md-ellipsis">
     Terminology
-    
   </span>
   
 
@@ -1852,7 +1799,6 @@
   
   <span class="md-ellipsis">
     JavaScript
-    
   </span>
   
 
@@ -1874,7 +1820,6 @@
   
   <span class="md-ellipsis">
     React
-    
   </span>
   
 
@@ -1896,7 +1841,6 @@
   
   <span class="md-ellipsis">
     Django
-    
   </span>
   
 
@@ -1926,7 +1870,6 @@
   
   <span class="md-ellipsis">
     CV
-    
   </span>
   
 
@@ -1948,7 +1891,6 @@
   
   <span class="md-ellipsis">
     LinkedIn
-    
   </span>
   
 
@@ -1970,7 +1912,6 @@
   
   <span class="md-ellipsis">
     Reddit
-    
   </span>
   
 
@@ -1992,7 +1933,6 @@
   
   <span class="md-ellipsis">
     Youtube
-    
   </span>
   
 
@@ -2018,23 +1958,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Video
-    
   </span>
   
 
@@ -2060,7 +2001,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -2082,7 +2022,6 @@
   
   <span class="md-ellipsis">
     Productivity
-    
   </span>
   
 
@@ -2104,7 +2043,6 @@
   
   <span class="md-ellipsis">
     Health
-    
   </span>
   
 
@@ -2132,15 +2070,14 @@
     
     
     
-      
-        
-        
-      
-      
     
+    
+      
+      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
@@ -2151,7 +2088,6 @@
   
   <span class="md-ellipsis">
     Mobile Developer
-    
   </span>
   
 
@@ -2178,17 +2114,66 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-expo-react-native" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Expo (React Native)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issue-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issue Solved
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2204,12 +2189,11 @@
     
     
     
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
@@ -2220,7 +2204,6 @@
   
   <span class="md-ellipsis">
     React Native
-    
   </span>
   
 
@@ -2246,7 +2229,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -2268,7 +2250,6 @@
   
   <span class="md-ellipsis">
     Topic
-    
   </span>
   
 
@@ -2290,7 +2271,6 @@
   
   <span class="md-ellipsis">
     Websocket
-    
   </span>
   
 
@@ -2324,23 +2304,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Inspired
-    
   </span>
   
 
@@ -2366,7 +2347,6 @@
   
   <span class="md-ellipsis">
     Intro
-    
   </span>
   
 
@@ -2388,7 +2368,6 @@
   
   <span class="md-ellipsis">
     Treasury of Quotes
-    
   </span>
   
 
@@ -2410,7 +2389,6 @@
   
   <span class="md-ellipsis">
     Goal Setting
-    
   </span>
   
 
@@ -2436,23 +2414,24 @@
     
     
     
+    
+    
       
       
     
-    
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
     Research
-    
   </span>
   
 
@@ -2478,7 +2457,6 @@
   
   <span class="md-ellipsis">
     AI
-    
   </span>
   
 
@@ -2500,7 +2478,6 @@
   
   <span class="md-ellipsis">
     Micro-Frontend
-    
   </span>
   
 
@@ -2522,7 +2499,6 @@
   
   <span class="md-ellipsis">
     Rabbitmq & Celery
-    
   </span>
   
 
@@ -2544,7 +2520,6 @@
   
   <span class="md-ellipsis">
     Wordpress
-    
   </span>
   
 
@@ -2566,7 +2541,6 @@
   
   <span class="md-ellipsis">
     prevent default
-    
   </span>
   
 
@@ -2588,7 +2562,6 @@
   
   <span class="md-ellipsis">
     Tips & Tricks
-    
   </span>
   
 
@@ -2610,7 +2583,6 @@
   
   <span class="md-ellipsis">
     CSS & Bootstrap
-    
   </span>
   
 
@@ -2632,7 +2604,6 @@
   
   <span class="md-ellipsis">
     Reference
-    
   </span>
   
 
@@ -2666,6 +2637,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-expo-react-native" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Expo (React Native)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issue-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Issue Solved
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2680,10 +2679,84 @@
                   
 
 
-
-  <h1>Intro</h1>
-
-<p>fasdf</p>
+<div><h1 id="intro">Intro</h1>
+<h2 id="research-expo-react-native">Research Expo (React Native)</h2>
+<p><a href="https://expo.dev/go">Expo Official</a></p>
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/FdjczjkwQKE?si=1MovnbnF7mSZAaq4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<p><a href="https://docs.expo.dev/get-started/create-a-project/">expo create a new project</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npx<span class="w"> </span>create-expo-app@latest
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Start Expo APP</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>npx<span class="w"> </span>expo<span class="w"> </span>start
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># or This also works which eventually starts expo start</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>npm<span class="w"> </span>start
+</span></code></pre></div>
+<details class="bug" open="open">
+<summary>Bug</summary>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>run<span class="w"> </span>andriod
+</span></code></pre></div>
+</details>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Android Studio Needed?</th>
+<th>Physical Device Support</th>
+<th>Emulator Support</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android SDK CLI</td>
+<td>No</td>
+<td>Yes</td>
+<td>Genymotion/SDK tools</td>
+<td>Manual setup, more control</td>
+</tr>
+<tr>
+<td>Expo CLI</td>
+<td>No</td>
+<td>Yes (Expo Go app)</td>
+<td>No (native modules)</td>
+<td>Easiest, but limited native support</td>
+</tr>
+<tr>
+<td>Community CLIs (Ignite)</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Depends on CLI, check documentation</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="https://reactnative.dev">reactnative.dev, Get Started with React Native</a></li>
+</ul>
+<hr>
+<h2 id="common-issue-solved">Common Issue Solved</h2>
+<div class="admonition error">
+<p class="admonition-title">uncaught error java lang exception incompatible sdk version expo sdk 53</p>
+</div>
+<ul>
+<li><a href="https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/#sdk-changelogs">Upgrade Expo SDK</a></li>
+</ul>
+<details class="success" open="open">
+<summary><a href="https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/#how-to-upgrade-to-the-latest-sdk-version">How to upgrade to the latest SDK version</a></summary>
+<p><strong>1. Upgrade the Expo SDK</strong></p>
+<p>Install the new version of the Expo package:</p>
+<div class="language-text highlight"><span class="filename">npm</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Install latest
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- npx expo install expo@latest
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a># Install a specific SDK version (for example, SDK 52)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>- npx expo install expo@^52.0.0
+</span></code></pre></div>
+<p><strong>2. Upgrade dependencies</strong></p>
+<p>Upgrade all dependencies to match the installed SDK version.</p>
+<div class="language-bash highlight"><span class="filename">bash</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npx<span class="w"> </span>expo<span class="w"> </span>install<span class="w"> </span>--fix
+</span></code></pre></div>
+</details></div>
 
 
 
@@ -2706,7 +2779,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
   Back to top
 </button>
         
@@ -2722,7 +2795,7 @@
           <a href="../../video/health/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Health">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2747,7 +2820,7 @@
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
             </div>
           </a>
         
@@ -2776,10 +2849,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": {"Compatibility": "compat"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "tags": {"Compatibility": "compat"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
